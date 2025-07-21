@@ -1,0 +1,14 @@
+# 共通
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+data
+*.swp
+*.bak
+
+# NeoVim
+lazy-lock.json
+*log
