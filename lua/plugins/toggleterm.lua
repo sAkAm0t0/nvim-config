@@ -7,10 +7,10 @@ return {
       open_mapping = [[<C-\>]],
       shade_terminals = true,
       shading_factor = 2,
-      direction = "float", -- "vertical" / "horizontal" / "tab" / "float"
+      direction = "float",
       float_opts = {
         border = "rounded",
-        winblend = 3,
+        winblend = 0,
       },
     })
   end,
