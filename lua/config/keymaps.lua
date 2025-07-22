@@ -31,4 +31,21 @@ map("n", "<leader>ca", vim.lsp.buf.code_action, vim.tbl_extend("force", opts, { 
 map("n", "<leader>cf", vim.lsp.buf.format, vim.tbl_extend("force", opts, { desc = "Format" }))
 
 -- Terminal 操作
-vim.keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<CR>", { desc = "Toggle Terminal" })
+map(
+  "n",
+  "<leader>tt",
+  "<cmd>ToggleTerm direct=float<CR>",
+  vim.tbl_extend("force", opts, { desc = "Toggle Floatting Terminal" })
+)
+map(
+  "n",
+  "<leader>th",
+  "<cmd>ToggleTerm direction=horizontal<CR>",
+  vim.tbl_extend("force", opts, { desc = "Toggle Horizontal Terminal" })
+)
+map(
+  "n",
+  "<leader>tv",
+  "<cmd>ToggleTerm direction=vertical<CR>",
+  vim.tbl_extend("force", opts, { desc = "Toggle Vertical Terminal" })
+)
