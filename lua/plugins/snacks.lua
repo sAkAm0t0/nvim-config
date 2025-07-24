@@ -1,5 +1,5 @@
 return {
-  "David-Kunz/snacks.nvim",
+  "folke/snacks.nvim",
   opts = {
     explorer = {
       enabled = false,
