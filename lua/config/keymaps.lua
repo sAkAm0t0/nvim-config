@@ -2,6 +2,10 @@ local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 local terminals = require("config.terminals")
 
+-- Leader キーの設定
+vim.g.mapleader = " "
+vim.g.localleader = "\\"
+
 -- ファイル操作
 map("n", "<leader>w", "<cmd>w<CR>", vim.tbl_extend("force", opts, { desc = "Save" }))
 map("n", "<leader>q", "<cmd>q<CR>", vim.tbl_extend("force", opts, { desc = "Quit" }))
